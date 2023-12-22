@@ -1,0 +1,104 @@
+.Animation {
+    animation: LogonNavLogo 3s ease-in-out forwards;
+    transition: all ease 1s;
+    opacity: 0;
+}
+
+.Animation:nth-child(2) {
+    animation-delay: 2s;
+}
+
+@keyframes LogonNavLogo {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.AnimationLinks {
+    animation: LogonLinks ease-in-out 1s forwards;
+    top: -100%;
+    transition: all ease 1s;
+}
+
+.AnimationLinks:nth-child(2) {
+    animation-delay: .5s;
+}
+
+.AnimationLinks:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.AnimationLinks:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+@keyframes LogonLinks {
+    0% {
+        top: -100%;
+        opacity: 0;
+        text-shadow: 0 0 14px #FFF;
+        text-shadow: 0 0 4px #FFF;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+        text-shadow: 0 0 0 #FFF;
+    }
+}
+
+.P1AnimationB1Headings {
+    animation: LogonBody .8s ease-in-out forwards;
+    left: -100%;
+    transition: all ease 1s;
+}
+
+.P1AnimationB1Headings:nth-child(2) {
+    animation-delay: .8s;
+}
+
+.P1AnimationB1Headings:nth-child(3) {
+    animation-delay: 1.6s;
+}
+
+@keyframes LogonBody {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.Animation3MiniDetails {
+    opacity: 0;
+    animation: LogonMiniDetails 5s ease forwards;
+}
+
+.Animation3MiniDetails:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.Animation3MiniDetails:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.Animation3MiniDetails:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.Animation3MiniDetails:nth-child(5),
+.Animation3MiniDetails:nth-child(6) {
+    animation-delay: 5s;
+}
+
+@keyframes LogonMiniDetails {
+    100% {
+        opacity: 1;
+    }
+}
